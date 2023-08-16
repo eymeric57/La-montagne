@@ -67,7 +67,7 @@ nav ul {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   nav ul {
     grid-template-columns: 33% 33% 33%;
   }
@@ -78,7 +78,7 @@ nav ul li {
   list-style: none;
   font-size: 0.9rem;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   nav ul li {
     font-size: 0.7rem;
     text-align: center;
@@ -111,9 +111,9 @@ section .main-chapter h2 {
   font-size: 1.3rem;
   width: 100%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   section .main-chapter h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 100%;
     padding: 80px 0 80px;
   }
@@ -123,9 +123,9 @@ section .main-chapter h2:before {
   content: "";
   border: solid rgba(146, 144, 144, 0.301) 1px;
   width: 33%;
-  margin: 5px 50px;
+  margin: 5px auto;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   section .main-chapter h2:before {
     width: 15%;
     margin: 5px 10px;
@@ -136,9 +136,9 @@ section .main-chapter h2:after {
   content: "";
   border: solid rgba(146, 144, 144, 0.301) 1px;
   width: 33%;
-  margin: 5px 50px;
+  margin: 5px auto;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   section .main-chapter h2:after {
     width: 15%;
     margin: 5px 10px;
@@ -152,9 +152,10 @@ section .main-chapter h3 {
   width: 40%;
   color: rgb(15, 15, 15);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   section .main-chapter h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    width: 40%;
   }
 }
 section .main-chapter p {
@@ -174,11 +175,21 @@ section .second-chapter {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 650px) {
+  section .second-chapter {
+    display: block;
+  }
+}
 section .second-chapter .first-travel {
   border: solid rgba(136, 134, 134, 0.61) 1px;
   border-left: none;
   padding: 80px 0;
   width: 100%;
+}
+@media screen and (max-width: 650px) {
+  section .second-chapter .first-travel {
+    border-bottom: none;
+  }
 }
 section .second-chapter .first-travel h1 {
   font-family: merriweather;
@@ -212,6 +223,11 @@ section .second-chapter .second-travel {
   padding: 80px 0;
   width: 100%;
 }
+@media screen and (max-width: 650px) {
+  section .second-chapter .second-travel {
+    border-top: none;
+  }
+}
 section .second-chapter .second-travel h1 {
   font-family: merriweather;
   font-size: 1rem;
@@ -226,6 +242,12 @@ section .second-chapter .second-travel h3 {
   padding-bottom: 20px;
   letter-spacing: 2px;
   line-height: 35px;
+}
+@media screen and (max-width: 650px) {
+  section .second-chapter .second-travel h3 {
+    font-size: 1.4rem;
+    width: 60%;
+  }
 }
 section .second-chapter .second-travel img {
   width: 78%;

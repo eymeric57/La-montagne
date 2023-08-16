@@ -15,10 +15,10 @@ section {
             font-size: 1.3rem;
             width:100%;
         }
-        @media screen  and (max-width:500px)
+        @media screen  and (max-width:650px)
             {
                 h2{
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                     width: 100%;
                     padding: 80px 0 80px;
                 }
@@ -31,10 +31,10 @@ section {
             content: "";
             border: solid rgba(146, 144, 144, 0.301) 1px;
             width: 33%;
-            margin: 5px 50px;
+            margin: 5px auto;
         }
         
-        @media screen  and (max-width:500px)
+        @media screen  and (max-width:650px)
             {
                 h2:before {
                     width: 15%;
@@ -49,10 +49,10 @@ section {
             content: "";
             border: solid rgba(146, 144, 144, 0.301) 1px;
             width: 33%;
-            margin: 5px 50px;
+            margin: 5px auto;
            
         }
-        @media screen  and (max-width:500px)
+        @media screen  and (max-width:650px)
         {
             h2:after {
                 width: 15%;
@@ -70,10 +70,11 @@ section {
             color: $black;
 
         }
-        @media screen  and (max-width:500px)
+        @media screen  and (max-width:650px)
             {
                 h3{
-                    font-size: 2.5rem;
+                    font-size: 1.5rem;
+                    width: 40%;
                 }
             
             
@@ -98,12 +99,23 @@ section {
     .second-chapter{
         display: flex;
 
+        @media  screen and (max-width:650px){
+            display: block;
+            
+        }
 
         .first-travel{
             border: solid rgba(136, 134, 134, 0.61) 1px;
             border-left: none;
             padding: 80px 0;
             width: 100%;
+            
+            @media  screen and (max-width:650px){
+                border-bottom: none; 
+                
+            }
+         
+
             h1 {
                 font-family: merriweather;
                 font-size: 1rem;
@@ -119,6 +131,7 @@ section {
                 letter-spacing: 2px;
                 line-height: 35px;
             }
+
             img{
                 width: 78%;
             }
@@ -137,6 +150,13 @@ section {
             border-left: none;
             padding: 80px 0;
             width: 100%;
+
+            @media  screen and (max-width:650px){
+                border-top: none; 
+                
+            }
+           
+        
             h1 {
                 font-family: merriweather;
                 font-size: 1rem;
@@ -151,6 +171,13 @@ section {
                 padding-bottom: 20px;
                 letter-spacing: 2px;
                 line-height: 35px;
+            }
+            @media screen  and (max-width:650px)
+            {
+                h3{
+                    font-size: 1.4rem;
+                    width: 60%;
+                }
             }
             img{
                 width: 78%;
