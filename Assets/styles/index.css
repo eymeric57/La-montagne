@@ -1,1 +1,132 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@font-face {
+  font-family: merriweather;
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(/Assets/img/bg.jpg) fixed center/cover;
+}
+
+img {
+  width: 50%;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+}
+header h1 {
+  font-family: Inter;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: rgb(245, 237, 237);
+  text-align: center;
+  padding-top: 270px;
+}
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+header p {
+  margin-top: 30px;
+  font-family: merriweather;
+  text-align: center;
+  color: rgb(245, 237, 237);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+header p i {
+  margin-top: 100px;
+  font-size: 1.5rem;
+  border: solid rgb(245, 237, 237) 2px;
+  border-radius: 100px;
+  padding: 17px 20px;
+}
+
+nav {
+  width: 76%;
+  margin: 170px auto;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 18% 18% 18% 46%;
+  background: rgba(255, 255, 255, 0.493);
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 500px) {
+  nav ul {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+nav ul li {
+  font-family: Inter;
+  color: rgb(245, 237, 237);
+  list-style: none;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 500px) {
+  nav ul li {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  nav ul p {
+    display: none;
+  }
+}
+nav ul p {
+  margin: 0;
+  color: rgb(245, 237, 237);
+  text-align: end;
+}
+nav ul p i {
+  margin: 0;
+  border: none;
+}
+
+section {
+  background: rgb(245, 237, 237);
+  width: 76%;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+section #main h2 {
+  padding: 80px 0 100px 0;
+  color: rgb(15, 15, 15);
+  font-family: merriweather;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+section #main h2:before {
+  display: inline-block;
+  content: "";
+  border: solid rgba(146, 144, 144, 0.301) 1px;
+  width: 30%;
+  margin: 5px 50px;
+}
+section #main h2:after {
+  display: inline-block;
+  content: "";
+  border: solid rgba(146, 144, 144, 0.301) 1px;
+  width: 30%;
+  margin: 5px 50px;
+}
+section #main h3 {
+  font-size: 5rem;
+  margin: 0 200px;
+}/*# sourceMappingURL=index.css.map */

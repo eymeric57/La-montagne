@@ -1,0 +1,53 @@
+nav{
+    width: 76%;
+    margin: 170px auto;
+
+   
+    ul{
+        
+        display: grid;
+        grid-template-columns: 18% 18% 18% 46%;
+        background: rgba(255, 255, 255, 0.493);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        @media screen  and (max-width:500px){
+        
+            grid-template-columns: 33% 33% 33%;
+            
+        
+    }
+
+        li{
+            font-family: Inter;
+            color: $white;
+            list-style: none;    
+            font-size: 0.9rem;
+        }
+        @media screen  and (max-width:500px){
+            li{
+                font-size: 0.7rem;
+                text-align: center;
+            }
+            p{
+                display: none;
+            }
+            
+        }
+        p{
+            margin: 0;
+            color: $white;
+            text-align: end;
+
+          i{
+            margin: 0;
+            border: none;
+          }
+        }
+      
+    }
+}
