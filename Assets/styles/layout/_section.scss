@@ -1,39 +1,170 @@
-section{
+section {
     background: $white;
-    width: 76%;
-    margin: 0 auto;
-    height: 100%;
+    width: 73%;
+    margin: auto auto;
     text-align: center;
 
 
 
- #main{
- 
-    h2{
-        padding: 80px 0 100px 0;
-        color: $black;
-        font-family: merriweather;
-        font-weight: 200;
-        font-size: 1.3rem;
+    .main-chapter {
+        h2 {
+            padding: 80px 20px 100px ;
+            color: $black;
+            font-family: merriweather;
+            font-weight: 200;
+            font-size: 1.3rem;
+            width:100%;
+        }
+        @media screen  and (max-width:500px)
+            {
+                h2{
+                    font-size: 1.3rem;
+                    width: 100%;
+                    padding: 80px 0 80px;
+                }
+            
+            
+        }
+
+        h2:before {
+            display: inline-block;
+            content: "";
+            border: solid rgba(146, 144, 144, 0.301) 1px;
+            width: 33%;
+            margin: 5px 50px;
+        }
+        
+        @media screen  and (max-width:500px)
+            {
+                h2:before {
+                    width: 15%;
+                   margin: 5px 10px;
+                }
+            
+            
+        }
+
+        h2:after {
+            display: inline-block;
+            content: "";
+            border: solid rgba(146, 144, 144, 0.301) 1px;
+            width: 33%;
+            margin: 5px 50px;
+           
+        }
+        @media screen  and (max-width:500px)
+        {
+            h2:after {
+                width: 15%;
+               margin: 5px 10px;
+            }
+        
+        
     }
-    h2:before{
-        display: inline-block;
-        content: "";
-        border: solid rgba(146, 144, 144, 0.301) 1px;
-        width: 30%;
-        margin: 5px 50px;
-    }
-    h2:after {
-        display: inline-block;
-        content: "";
-        border: solid rgba(146, 144, 144, 0.301) 1px;
-        width: 30%;
-        margin: 5px 50px;
+        h3 {
+            font-family: Inter;
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            margin: 0 auto;
+            width: 40%;
+            color: $black;
+
+        }
+        @media screen  and (max-width:500px)
+            {
+                h3{
+                    font-size: 2.5rem;
+                }
+            
+            
+        }
+        p{
+            width: 50%;
+            margin: 50px auto 0;
+            font-size: 1rem;
+            line-height: 50px;
+            font-style: italic;
+            font-family: merriweather;
+        }
+
+        img{
+            width: 80%;
+            margin: 40px auto 25px;
+        }
+       
 
     }
-    h3{
-        font-size: 5rem;
-        margin:  0 200px;
+
+    .second-chapter{
+        display: flex;
+
+
+        .first-travel{
+            border: solid rgba(136, 134, 134, 0.61) 1px;
+            border-left: none;
+            padding: 80px 0;
+            width: 100%;
+            h1 {
+                font-family: merriweather;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+            h3{
+                font-family: Inter;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                width: 35%;
+                margin: 25px auto;
+                padding-bottom: 20px;
+                letter-spacing: 2px;
+                line-height: 35px;
+            }
+            img{
+                width: 78%;
+            }
+            p{
+            
+            width: 78%;
+            margin: 30px auto;
+            font-family: merriweather;
+            text-align: start;
+            line-height: 37px;
+            font-size: 1rem;
+            }
+        }
+        .second-travel {
+            border: solid rgba(136, 134, 134, 0.61) 1px;
+            border-left: none;
+            padding: 80px 0;
+            width: 100%;
+            h1 {
+                font-family: merriweather;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+            h3{
+                font-family: Inter;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                width: 35%;
+                margin: 25px auto;
+                padding-bottom: 20px;
+                letter-spacing: 2px;
+                line-height: 35px;
+            }
+            img{
+                width: 78%;
+            }
+            p{
+            
+                width: 78%;
+                margin: 30px auto;
+                font-family: merriweather;
+                text-align: start;
+                line-height: 37px;
+                font-size: 1rem;
+                }
+        }
+
     }
-}
 }
