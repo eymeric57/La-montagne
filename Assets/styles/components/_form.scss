@@ -1,3 +1,8 @@
+#footer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .box-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5,12 +10,12 @@
 
     form {
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
 
         label#namel {
             font-family: Inter;
             text-transform: uppercase;
-            margin-top: 80px;
+            margin-top: 72px;
             margin-left: 70px;
             font-size: 0.9rem;
             text-align: start;
@@ -19,7 +24,7 @@
         label#maill {
             font-family: Inter;
             text-transform: uppercase;
-            margin-top: 10px;
+            margin-top: -20px;
             margin-left: 70px;
             font-size: 0.9rem;
             text-align: start;
@@ -36,17 +41,17 @@
         }
 
         input#namet {
-            border: solid $grey 1px;
+            border: solid $grey2 1px;
             border-radius: 5px;
             height: 54px;
             width: 80%;
-            margin: 5px auto 0;
+            margin: -10px auto 0;
             font-size: 2rem;
             
 
         }
         input#mail {
-            border: solid $grey 1px;
+            border: solid $grey2 1px;
             border-radius: 5px;
             height: 54px;
             width: 80%;
@@ -54,12 +59,106 @@
             font-size: 2rem;
         }
         input#msg{
-            border: solid $grey 1px;
+            border: solid $grey2 1px;
             border-radius: 5px;
             height: 250px;
             width: 80%;
             margin: 5px auto 0;
             font-size: 2rem;
         }
+        button{
+            width: 37%;
+            margin: 50px auto;
+            padding: 10px 30px;
+            height: 35%;
+            color: $grey;
+            border: $grey solid 1px;
+
+    
+        }
+ 
     }
+    .contact{
+        display: grid;
+        grid-template-rows: auto;
+
+        .adress{
+            display: flex;
+            justify-content: start;
+            border-left: solid $grey2 1px;
+            border-bottom: solid $grey2 1px;
+            height: 200px;
+            h1{
+                margin: 90px 0 auto 50px;
+                font-size: 0.9rem;
+                font-family: Inter;
+               
+
+            }
+            p{
+                text-align: start;
+                font-family: merriweather;
+               margin: auto 95px;
+               line-height: 30px;   
+            }
+        }
+        .PHONE{
+            display: flex;
+            justify-content: start;
+            border-left: solid $grey2 1px;
+            border-bottom: solid $grey2 1px;
+            height: 200px;
+            h1{
+                margin: 90px 0 auto 50px;
+                font-size: 0.9rem;
+                font-family: Inter;
+            }
+            p{
+                text-align: start;
+                font-family: merriweather;
+               margin: auto 95px;
+               line-height: 30px;   
+            }
+        }
+        .EMAIL{
+            display: flex;
+            justify-content: start;
+            border-left: solid $grey2 1px;
+            height: 200px;
+            h1{
+                margin: 90px 0 auto 50px;
+                font-size: 0.9rem;
+                font-family: Inter;
+               
+
+            }
+            p{
+                text-align: start;
+                font-family: merriweather;
+               margin: auto 95px;
+               line-height: 30px;   
+            }
+        }
+        .SOCIAL{
+            display: flex;
+            justify-content: start;
+            border: solid $grey2 1px;
+            height: 200px;
+            h1{
+                margin: 90px 0 auto 50px;
+                font-size: 0.9rem;
+                font-family: Inter;
+               
+
+            }
+            p{
+                text-align: start;
+                font-family: merriweather;
+               margin: auto 95px;
+               line-height: 30px;   
+            }
+        }
+        
+    }
+
 }

@@ -275,6 +275,11 @@ button {
   margin-bottom: 110px;
 }
 
+#footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .box-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -282,25 +287,25 @@ button {
 }
 .box-grid form {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
 }
 .box-grid form label#namel {
   font-family: Inter;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 72px;
   margin-left: 70px;
   font-size: 0.9rem;
   text-align: start;
-  color: rgb(175, 171, 171);
+  color: rgb(112, 111, 111);
 }
 .box-grid form label#maill {
   font-family: Inter;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: -20px;
   margin-left: 70px;
   font-size: 0.9rem;
   text-align: start;
-  color: rgb(175, 171, 171);
+  color: rgb(112, 111, 111);
 }
 .box-grid form label#msgl {
   font-family: Inter;
@@ -309,18 +314,18 @@ button {
   margin-left: 70px;
   font-size: 0.9rem;
   text-align: start;
-  color: rgb(175, 171, 171);
+  color: rgb(112, 111, 111);
 }
 .box-grid form input#namet {
-  border: solid rgb(175, 171, 171) 1px;
+  border: solid rgb(202, 202, 202) 1px;
   border-radius: 5px;
   height: 54px;
   width: 80%;
-  margin: 5px auto 0;
+  margin: -10px auto 0;
   font-size: 2rem;
 }
 .box-grid form input#mail {
-  border: solid rgb(175, 171, 171) 1px;
+  border: solid rgb(202, 202, 202) 1px;
   border-radius: 5px;
   height: 54px;
   width: 80%;
@@ -328,10 +333,108 @@ button {
   font-size: 2rem;
 }
 .box-grid form input#msg {
-  border: solid rgb(175, 171, 171) 1px;
+  border: solid rgb(202, 202, 202) 1px;
   border-radius: 5px;
   height: 250px;
   width: 80%;
   margin: 5px auto 0;
   font-size: 2rem;
+}
+.box-grid form button {
+  width: 37%;
+  margin: 50px auto;
+  padding: 10px 30px;
+  height: 35%;
+  color: rgb(112, 111, 111);
+  border: rgb(112, 111, 111) solid 1px;
+}
+.box-grid .contact {
+  display: grid;
+  grid-template-rows: auto;
+}
+.box-grid .contact .adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border-left: solid rgb(202, 202, 202) 1px;
+  border-bottom: solid rgb(202, 202, 202) 1px;
+  height: 200px;
+}
+.box-grid .contact .adress h1 {
+  margin: 90px 0 auto 50px;
+  font-size: 0.9rem;
+  font-family: Inter;
+}
+.box-grid .contact .adress p {
+  text-align: start;
+  font-family: merriweather;
+  margin: auto 95px;
+  line-height: 30px;
+}
+.box-grid .contact .PHONE {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border-left: solid rgb(202, 202, 202) 1px;
+  border-bottom: solid rgb(202, 202, 202) 1px;
+  height: 200px;
+}
+.box-grid .contact .PHONE h1 {
+  margin: 90px 0 auto 50px;
+  font-size: 0.9rem;
+  font-family: Inter;
+}
+.box-grid .contact .PHONE p {
+  text-align: start;
+  font-family: merriweather;
+  margin: auto 95px;
+  line-height: 30px;
+}
+.box-grid .contact .EMAIL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border-left: solid rgb(202, 202, 202) 1px;
+  height: 200px;
+}
+.box-grid .contact .EMAIL h1 {
+  margin: 90px 0 auto 50px;
+  font-size: 0.9rem;
+  font-family: Inter;
+}
+.box-grid .contact .EMAIL p {
+  text-align: start;
+  font-family: merriweather;
+  margin: auto 95px;
+  line-height: 30px;
+}
+.box-grid .contact .SOCIAL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border: solid rgb(202, 202, 202) 1px;
+  height: 200px;
+}
+.box-grid .contact .SOCIAL h1 {
+  margin: 90px 0 auto 50px;
+  font-size: 0.9rem;
+  font-family: Inter;
+}
+.box-grid .contact .SOCIAL p {
+  text-align: start;
+  font-family: merriweather;
+  margin: auto 95px;
+  line-height: 30px;
 }/*# sourceMappingURL=index.css.map */
