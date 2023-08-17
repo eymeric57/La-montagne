@@ -275,73 +275,63 @@ button {
   margin-bottom: 110px;
 }
 
-#footer {
+.box-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 37px;
+  position: relative;
 }
-#footer form {
+.box-grid form {
   display: grid;
-  grid-column: 1;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.box-grid form label#namel {
+  font-family: Inter;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-left: 70px;
+  font-size: 0.9rem;
   text-align: start;
-  margin-top: 50px;
+  color: rgb(175, 171, 171);
 }
-#footer form #firstname {
+.box-grid form label#maill {
   font-family: Inter;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-left: 70px;
   font-size: 0.9rem;
+  text-align: start;
   color: rgb(175, 171, 171);
-  margin-left: 55px;
-  margin-top: 32px;
 }
-#footer form #email {
+.box-grid form label#msgl {
   font-family: Inter;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-left: 70px;
   font-size: 0.9rem;
+  text-align: start;
   color: rgb(175, 171, 171);
-  margin-left: 55px;
-  margin-top: 22px;
 }
-#footer form #msg {
-  font-family: Inter;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.9rem;
-  color: rgb(175, 171, 171);
-  margin-left: 55px;
-  margin-top: 22px;
-}
-#footer form textarea {
-  resize: none;
-  height: 55px;
-  width: 80%;
-  margin: 0 auto;
-}
-#footer form textarea #Nametext {
+.box-grid form input#namet {
+  border: solid rgb(175, 171, 171) 1px;
   border-radius: 5px;
-  border: solid 1px rgb(175, 171, 171);
-  background: rgb(250, 248, 248);
+  height: 54px;
   width: 80%;
+  margin: 5px auto 0;
+  font-size: 2rem;
 }
-#footer form textarea #emailtext {
+.box-grid form input#mail {
+  border: solid rgb(175, 171, 171) 1px;
   border-radius: 5px;
-  border: solid 1px rgb(175, 171, 171);
-  background: rgb(250, 248, 248);
+  height: 54px;
   width: 80%;
+  margin: 4px auto 0;
+  font-size: 2rem;
 }
-#footer form textarea #msgt {
+.box-grid form input#msg {
+  border: solid rgb(175, 171, 171) 1px;
   border-radius: 5px;
-  border: solid 1px rgb(175, 171, 171);
-  background: rgb(250, 248, 248);
+  height: 250px;
   width: 80%;
-}
-#footer form button {
-  width: 80%;
-  margin: 0 auto;
-}
-#footer .contact {
-  grid-column: 2;
+  margin: 5px auto 0;
+  font-size: 2rem;
 }/*# sourceMappingURL=index.css.map */

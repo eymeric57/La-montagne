@@ -1,86 +1,65 @@
-#footer{
+.box-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 37px;
-    
-    
-    form{
+    position: relative;
+
+    form {
         display: grid;
-        grid-column: 1;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-        text-align: start;
-        margin-top: 50px;
-            
-        #firstname{
+        grid-template-rows: auto;
+
+        label#namel {
             font-family: Inter;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-top: 80px;
+            margin-left: 70px;
             font-size: 0.9rem;
+            text-align: start;
             color: $grey;
-            margin-left: 55px;
-            margin-top: 32px;
-            
         }
-
-        #email{
+        label#maill {
             font-family: Inter;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-top: 10px;
+            margin-left: 70px;
             font-size: 0.9rem;
+            text-align: start;
             color: $grey;
-            margin-left: 55px;
-            margin-top: 22px;
-               
         }
-        #msg{
+        label#msgl {
             font-family: Inter;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-top: 10px;
+            margin-left: 70px;
             font-size: 0.9rem;
+            text-align: start;
             color: $grey;
-            margin-left: 55px;
-            margin-top: 22px;
-
         }
-        textarea {
-            resize: none;
-            height: 55px;
-            width: 80%;
-            margin: 0  auto;
 
-            #Nametext{
-                border-radius: 5px;
-            border: solid 1px $grey;
-            background: $white;
-            width: 80%;
-                
-            }
-        
-        #emailtext{
+        input#namet {
+            border: solid $grey 1px;
             border-radius: 5px;
-            border: solid 1px $grey;
-            background: $white;
+            height: 54px;
             width: 80%;
-          
-           
-        }
-          
+            margin: 5px auto 0;
+            font-size: 2rem;
             
-         #msgt{
-            border-radius: 5px;
-            border: solid 1px $grey;
-            background: $white;
-            width: 80%;
-        }
 
         }
-        button{
+        input#mail {
+            border: solid $grey 1px;
+            border-radius: 5px;
+            height: 54px;
             width: 80%;
-            margin: 0 auto;
+            margin: 4px auto 0;
+            font-size: 2rem;
         }
-    }
-    .contact{
-        grid-column: 2;
+        input#msg{
+            border: solid $grey 1px;
+            border-radius: 5px;
+            height: 250px;
+            width: 80%;
+            margin: 5px auto 0;
+            font-size: 2rem;
+        }
     }
 }
-
