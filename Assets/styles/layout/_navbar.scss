@@ -3,13 +3,14 @@
 nav{
     width: 73%;
     margin: 170px auto 0;
+  
 
    
     ul{
         
         display: grid;
         grid-template-columns: 18% 18% 18% 46%;
-        background: rgba(255, 255, 255, 0.493);
+        background: rgba(255, 255, 255, 0.226);
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -23,13 +24,28 @@ nav{
             
         
     }
-
-        li{
+        a#left {
             font-family: Inter;
             color: $white;
             list-style: none;    
             font-size: 0.9rem;
+            line-height: 80px;
+            transition:0.5s;
+            cursor: pointer;
+        
+              &:hover {
+                background: $white1;
+                color: $black;
+                
+              }
+              &:first-child{
+                color: black;
+                background: $white1;
+              }
+              
         }
+
+    
         @media screen  and (max-width:650px){
             li{
                 font-size: 0.7rem;
@@ -41,13 +57,19 @@ nav{
             
         }
         p{
-            margin: 0;
+            margin: auto 50px;
             color: $white;
             text-align: end;
+           
 
           i{
             margin: 0;
             border: none;
+            transition: 1s;
+            &:hover{
+                scale: 1.4;
+                cursor: pointer;
+            }
           }
         }
       

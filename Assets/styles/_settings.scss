@@ -1,5 +1,6 @@
 $black: rgb(15, 15, 15);
 $white:rgb(250, 248, 248);
+$white1:rgb(235, 231, 231);
 $grey: rgb(112, 111, 111);
 $grey2:rgb(202, 202, 202);
 
@@ -9,13 +10,19 @@ $grey2:rgb(202, 202, 202);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
 }
 body{
     background: url(/Assets/img/bg.jpg) fixed center/cover;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 input{
     display: block;
