@@ -8,12 +8,18 @@
         grid-template-rows: 100px 100px 300px 50px;
         margin-top: 80px;
         gap: 23px;
+        @media screen  and (max-width:650px){
+            display: block;
+        }
         label{
             margin-left: 70px;
             font-size: 0.9rem;
             font-family: Inter;
             color: $grey;
             text-transform: uppercase;
+            @media screen  and (max-width:650px){
+                margin-top: 20px;
+            }
         }
         input{
             height: 54px;
@@ -38,6 +44,10 @@
 .box-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media screen  and (max-width:650px){
+        display: block;
+        padding: 10px;
+    }
 
     .contact{
         display: grid;
@@ -50,10 +60,16 @@
             border-left: solid $grey2 1px;
             border-bottom: solid $grey2 1px;
             height: 200px;
+            @media screen  and (max-width:650px){
+                border:solid $grey2 1px;
+            }
             h1{
                 margin: 90px 0 auto 50px;
                 font-size: 0.9rem;
                 font-family: Inter;
+                @media screen  and (max-width:650px){
+                    margin: auto ;
+                }
                
 
             }
@@ -62,6 +78,9 @@
                 font-family: merriweather;
                margin: auto 95px;
                line-height: 30px;   
+               @media screen  and (max-width:650px){
+                margin: auto ;
+            }
             }
         }
         .PHONE{
@@ -70,16 +89,26 @@
             border-left: solid $grey2 1px;
             border-bottom: solid $grey2 1px;
             height: 200px;
+            @media screen  and (max-width:650px){
+                border:solid $grey2 1px;
+            }
             h1{
                 margin: 90px 0 auto 50px;
                 font-size: 0.9rem;
                 font-family: Inter;
+                @media screen  and (max-width:650px){
+                    margin: auto;
+                      
+                   }
             }
             p{
                 text-align: start;
                 font-family: merriweather;
                margin: auto 95px;
                line-height: 30px;   
+               @media screen  and (max-width:650px){
+                margin: auto ;
+            }
             }
         }
         .EMAIL{
@@ -87,10 +116,17 @@
             justify-content: start;
             border-left: solid $grey2 1px;
             height: 200px;
+            @media screen  and (max-width:650px){
+                border:solid $grey2 1px;
+            }
             h1{
                 margin: 90px 0 auto 50px;
                 font-size: 0.9rem;
                 font-family: Inter;
+                @media screen  and (max-width:650px){
+                    margin: auto;
+                      
+                   }
                
 
             }
@@ -99,6 +135,9 @@
                 font-family: merriweather;
                margin: auto 95px;
                line-height: 30px;   
+               @media screen  and (max-width:650px){
+                margin: auto ;
+            }
             }
         }
         .SOCIAL{
@@ -106,10 +145,15 @@
             justify-content: start;
             border: solid $grey2 1px;
             height: 200px;
+         
             h1{
                 margin: 90px 0 auto 50px;
                 font-size: 0.9rem;
                 font-family: Inter;
+                @media screen  and (max-width:650px){
+                    margin: auto;
+                      
+                   }
                
 
             }
@@ -119,11 +163,26 @@
                margin: auto 95px;
                line-height: 30px;   
                font-size: 1.1rem;
+               @media screen  and (max-width:650px){
+                align-items: center;
+                display: flex;
+                width: 50%;
+                margin: auto;
+                font-size: 1rem;
+                  
+               }
                i{
                 margin-left: 40px;
                 padding: 15px;
                 border: solid $grey 1px;
                 border-radius: 50px;
+                @media screen  and (max-width:650px){
+                    padding: 7px;
+                    margin: auto;
+                      
+                   }
+                
+               
                }
             }
         }

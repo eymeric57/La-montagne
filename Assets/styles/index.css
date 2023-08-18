@@ -95,10 +95,14 @@ nav ul a#left {
   color: rgb(250, 248, 248);
   list-style: none;
   font-size: 0.9rem;
-  line-height: 80px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+  nav ul a#left {
+    line-height: normal;
+  }
 }
 nav ul a#left:hover {
   background: rgb(235, 231, 231);
@@ -322,12 +326,22 @@ button {
   margin-top: 80px;
   gap: 23px;
 }
+@media screen and (max-width: 650px) {
+  #footer form {
+    display: block;
+  }
+}
 #footer form label {
   margin-left: 70px;
   font-size: 0.9rem;
   font-family: Inter;
   color: rgb(112, 111, 111);
   text-transform: uppercase;
+}
+@media screen and (max-width: 650px) {
+  #footer form label {
+    margin-top: 20px;
+  }
 }
 #footer form input {
   height: 54px;
@@ -349,6 +363,12 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 650px) {
+  #footer .box-grid {
+    display: block;
+    padding: 10px;
+  }
+}
 #footer .box-grid .contact {
   display: grid;
   grid-template-rows: auto;
@@ -365,16 +385,31 @@ button {
   border-bottom: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .adress {
+    border: solid rgb(202, 202, 202) 1px;
+  }
+}
 #footer .box-grid .contact .adress h1 {
   margin: 90px 0 auto 50px;
   font-size: 0.9rem;
   font-family: Inter;
+}
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .adress h1 {
+    margin: auto;
+  }
 }
 #footer .box-grid .contact .adress p {
   text-align: start;
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
+}
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .adress p {
+    margin: auto;
+  }
 }
 #footer .box-grid .contact .PHONE {
   display: -webkit-box;
@@ -387,16 +422,31 @@ button {
   border-bottom: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .PHONE {
+    border: solid rgb(202, 202, 202) 1px;
+  }
+}
 #footer .box-grid .contact .PHONE h1 {
   margin: 90px 0 auto 50px;
   font-size: 0.9rem;
   font-family: Inter;
+}
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .PHONE h1 {
+    margin: auto;
+  }
 }
 #footer .box-grid .contact .PHONE p {
   text-align: start;
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
+}
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .PHONE p {
+    margin: auto;
+  }
 }
 #footer .box-grid .contact .EMAIL {
   display: -webkit-box;
@@ -408,16 +458,31 @@ button {
   border-left: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .EMAIL {
+    border: solid rgb(202, 202, 202) 1px;
+  }
+}
 #footer .box-grid .contact .EMAIL h1 {
   margin: 90px 0 auto 50px;
   font-size: 0.9rem;
   font-family: Inter;
+}
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .EMAIL h1 {
+    margin: auto;
+  }
 }
 #footer .box-grid .contact .EMAIL p {
   text-align: start;
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
+}
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .EMAIL p {
+    margin: auto;
+  }
 }
 #footer .box-grid .contact .SOCIAL {
   display: -webkit-box;
@@ -434,6 +499,11 @@ button {
   font-size: 0.9rem;
   font-family: Inter;
 }
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .SOCIAL h1 {
+    margin: auto;
+  }
+}
 #footer .box-grid .contact .SOCIAL p {
   text-align: start;
   font-family: merriweather;
@@ -441,9 +511,28 @@ button {
   line-height: 30px;
   font-size: 1.1rem;
 }
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .SOCIAL p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+  }
+}
 #footer .box-grid .contact .SOCIAL p i {
   margin-left: 40px;
   padding: 15px;
   border: solid rgb(112, 111, 111) 1px;
   border-radius: 50px;
+}
+@media screen and (max-width: 650px) {
+  #footer .box-grid .contact .SOCIAL p i {
+    padding: 7px;
+    margin: auto;
+  }
 }/*# sourceMappingURL=index.css.map */

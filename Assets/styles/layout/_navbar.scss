@@ -29,9 +29,12 @@ nav{
             color: $white;
             list-style: none;    
             font-size: 0.9rem;
-            line-height: 80px;
+           
             transition:0.5s;
             cursor: pointer;
+            @media screen  and (max-width:650px){
+              line-height: normal;}
+              
         
               &:hover {
                 background: $white1;
