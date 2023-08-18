@@ -12,6 +12,10 @@ body {
   background: url(/Assets/img/bg.jpg) fixed center/cover;
 }
 
+input {
+  display: block;
+}
+
 img {
   width: 50%;
 }
@@ -97,13 +101,13 @@ nav ul p i {
   border: none;
 }
 
-section {
+#box, #main {
   background: rgb(250, 248, 248);
   width: 73%;
   margin: auto auto;
   text-align: center;
 }
-section .main-chapter h2 {
+#box .main-chapter h2, #main .main-chapter h2 {
   padding: 80px 20px 100px;
   color: rgb(15, 15, 15);
   font-family: merriweather;
@@ -112,13 +116,13 @@ section .main-chapter h2 {
   width: 100%;
 }
 @media screen and (max-width: 650px) {
-  section .main-chapter h2 {
+  #box .main-chapter h2, #main .main-chapter h2 {
     font-size: 1rem;
     width: 100%;
     padding: 80px 0 80px;
   }
 }
-section .main-chapter h2:before {
+#box .main-chapter h2:before, #main .main-chapter h2:before {
   display: inline-block;
   content: "";
   border: solid rgba(146, 144, 144, 0.301) 1px;
@@ -126,12 +130,12 @@ section .main-chapter h2:before {
   margin: 5px auto;
 }
 @media screen and (max-width: 650px) {
-  section .main-chapter h2:before {
+  #box .main-chapter h2:before, #main .main-chapter h2:before {
     width: 15%;
     margin: 5px 10px;
   }
 }
-section .main-chapter h2:after {
+#box .main-chapter h2:after, #main .main-chapter h2:after {
   display: inline-block;
   content: "";
   border: solid rgba(146, 144, 144, 0.301) 1px;
@@ -139,12 +143,12 @@ section .main-chapter h2:after {
   margin: 5px auto;
 }
 @media screen and (max-width: 650px) {
-  section .main-chapter h2:after {
+  #box .main-chapter h2:after, #main .main-chapter h2:after {
     width: 15%;
     margin: 5px 10px;
   }
 }
-section .main-chapter h3 {
+#box .main-chapter h3, #main .main-chapter h3 {
   font-family: Inter;
   text-transform: uppercase;
   font-size: 3.5rem;
@@ -153,12 +157,12 @@ section .main-chapter h3 {
   color: rgb(15, 15, 15);
 }
 @media screen and (max-width: 650px) {
-  section .main-chapter h3 {
+  #box .main-chapter h3, #main .main-chapter h3 {
     font-size: 1.5rem;
     width: 40%;
   }
 }
-section .main-chapter p {
+#box .main-chapter p, #main .main-chapter p {
   width: 50%;
   margin: 50px auto 0;
   font-size: 1rem;
@@ -166,37 +170,37 @@ section .main-chapter p {
   font-style: italic;
   font-family: merriweather;
 }
-section .main-chapter img {
+#box .main-chapter img, #main .main-chapter img {
   width: 80%;
   margin: 40px auto 25px;
 }
-section .second-chapter {
+#box .second-chapter, #main .second-chapter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 650px) {
-  section .second-chapter {
+  #box .second-chapter, #main .second-chapter {
     display: block;
   }
 }
-section .second-chapter .first-travel {
+#box .second-chapter .first-travel, #main .second-chapter .first-travel {
   border: solid rgba(136, 134, 134, 0.61) 1px;
   border-left: none;
   padding: 80px 0;
   width: 100%;
 }
 @media screen and (max-width: 650px) {
-  section .second-chapter .first-travel {
+  #box .second-chapter .first-travel, #main .second-chapter .first-travel {
     border-bottom: none;
   }
 }
-section .second-chapter .first-travel h1 {
+#box .second-chapter .first-travel h1, #main .second-chapter .first-travel h1 {
   font-family: merriweather;
   font-size: 1rem;
   font-weight: 100;
 }
-section .second-chapter .first-travel h3 {
+#box .second-chapter .first-travel h3, #main .second-chapter .first-travel h3 {
   font-family: Inter;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -206,10 +210,10 @@ section .second-chapter .first-travel h3 {
   letter-spacing: 2px;
   line-height: 35px;
 }
-section .second-chapter .first-travel img {
+#box .second-chapter .first-travel img, #main .second-chapter .first-travel img {
   width: 78%;
 }
-section .second-chapter .first-travel p {
+#box .second-chapter .first-travel p, #main .second-chapter .first-travel p {
   width: 78%;
   margin: 30px auto;
   font-family: merriweather;
@@ -217,23 +221,23 @@ section .second-chapter .first-travel p {
   line-height: 37px;
   font-size: 1rem;
 }
-section .second-chapter .second-travel {
+#box .second-chapter .second-travel, #main .second-chapter .second-travel {
   border: solid rgba(136, 134, 134, 0.61) 1px;
   border-left: none;
   padding: 80px 0;
   width: 100%;
 }
 @media screen and (max-width: 650px) {
-  section .second-chapter .second-travel {
+  #box .second-chapter .second-travel, #main .second-chapter .second-travel {
     border-top: none;
   }
 }
-section .second-chapter .second-travel h1 {
+#box .second-chapter .second-travel h1, #main .second-chapter .second-travel h1 {
   font-family: merriweather;
   font-size: 1rem;
   font-weight: 100;
 }
-section .second-chapter .second-travel h3 {
+#box .second-chapter .second-travel h3, #main .second-chapter .second-travel h3 {
   font-family: Inter;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -244,15 +248,15 @@ section .second-chapter .second-travel h3 {
   line-height: 35px;
 }
 @media screen and (max-width: 650px) {
-  section .second-chapter .second-travel h3 {
+  #box .second-chapter .second-travel h3, #main .second-chapter .second-travel h3 {
     font-size: 1.4rem;
     width: 60%;
   }
 }
-section .second-chapter .second-travel img {
+#box .second-chapter .second-travel img, #main .second-chapter .second-travel img {
   width: 78%;
 }
-section .second-chapter .second-travel p {
+#box .second-chapter .second-travel p, #main .second-chapter .second-travel p {
   width: 78%;
   margin: 30px auto;
   font-family: merriweather;
@@ -276,83 +280,49 @@ button {
 }
 
 #footer {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  background: rgb(250, 248, 248);
+  width: 73%;
+  margin: 40px auto;
 }
-
-.box-grid {
+#footer form {
+  display: grid;
+  grid-template-rows: 100px 100px 300px 50px;
+  margin-top: 80px;
+  gap: 23px;
+}
+#footer form label {
+  margin-left: 70px;
+  font-size: 0.9rem;
+  font-family: Inter;
+  color: rgb(112, 111, 111);
+  text-transform: uppercase;
+}
+#footer form input {
+  height: 54px;
+  width: 80%;
+  margin: 20px auto;
+}
+#footer form button {
+  margin-left: 70px;
+  margin-bottom: 80px;
+  color: rgb(112, 111, 111);
+  border-color: rgb(112, 111, 111);
+}
+#footer form #msg {
+  height: 245px;
+  width: 80%;
+  margin: 20px auto;
+}
+#footer .box-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  position: relative;
 }
-.box-grid form {
-  display: grid;
-  grid-template-rows: 1fr 1fr 2fr 1fr;
-}
-.box-grid form label#namel {
-  font-family: Inter;
-  text-transform: uppercase;
-  margin-top: 72px;
-  margin-left: 70px;
-  font-size: 0.9rem;
-  text-align: start;
-  color: rgb(112, 111, 111);
-}
-.box-grid form label#maill {
-  font-family: Inter;
-  text-transform: uppercase;
-  margin-top: -20px;
-  margin-left: 70px;
-  font-size: 0.9rem;
-  text-align: start;
-  color: rgb(112, 111, 111);
-}
-.box-grid form label#msgl {
-  font-family: Inter;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-left: 70px;
-  font-size: 0.9rem;
-  text-align: start;
-  color: rgb(112, 111, 111);
-}
-.box-grid form input#namet {
-  border: solid rgb(202, 202, 202) 1px;
-  border-radius: 5px;
-  height: 54px;
-  width: 80%;
-  margin: -10px auto 0;
-  font-size: 2rem;
-}
-.box-grid form input#mail {
-  border: solid rgb(202, 202, 202) 1px;
-  border-radius: 5px;
-  height: 54px;
-  width: 80%;
-  margin: 4px auto 0;
-  font-size: 2rem;
-}
-.box-grid form input#msg {
-  border: solid rgb(202, 202, 202) 1px;
-  border-radius: 5px;
-  height: 250px;
-  width: 80%;
-  margin: 5px auto 0;
-  font-size: 2rem;
-}
-.box-grid form button {
-  width: 37%;
-  margin: 50px auto;
-  padding: 10px 30px;
-  height: 35%;
-  color: rgb(112, 111, 111);
-  border: rgb(112, 111, 111) solid 1px;
-}
-.box-grid .contact {
+#footer .box-grid .contact {
   display: grid;
   grid-template-rows: auto;
+  display: block;
 }
-.box-grid .contact .adress {
+#footer .box-grid .contact .adress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,18 +333,18 @@ button {
   border-bottom: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
-.box-grid .contact .adress h1 {
+#footer .box-grid .contact .adress h1 {
   margin: 90px 0 auto 50px;
   font-size: 0.9rem;
   font-family: Inter;
 }
-.box-grid .contact .adress p {
+#footer .box-grid .contact .adress p {
   text-align: start;
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
 }
-.box-grid .contact .PHONE {
+#footer .box-grid .contact .PHONE {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,18 +355,18 @@ button {
   border-bottom: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
-.box-grid .contact .PHONE h1 {
+#footer .box-grid .contact .PHONE h1 {
   margin: 90px 0 auto 50px;
   font-size: 0.9rem;
   font-family: Inter;
 }
-.box-grid .contact .PHONE p {
+#footer .box-grid .contact .PHONE p {
   text-align: start;
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
 }
-.box-grid .contact .EMAIL {
+#footer .box-grid .contact .EMAIL {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,18 +376,18 @@ button {
   border-left: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
-.box-grid .contact .EMAIL h1 {
+#footer .box-grid .contact .EMAIL h1 {
   margin: 90px 0 auto 50px;
   font-size: 0.9rem;
   font-family: Inter;
 }
-.box-grid .contact .EMAIL p {
+#footer .box-grid .contact .EMAIL p {
   text-align: start;
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
 }
-.box-grid .contact .SOCIAL {
+#footer .box-grid .contact .SOCIAL {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,14 +397,21 @@ button {
   border: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
-.box-grid .contact .SOCIAL h1 {
+#footer .box-grid .contact .SOCIAL h1 {
   margin: 90px 0 auto 50px;
   font-size: 0.9rem;
   font-family: Inter;
 }
-.box-grid .contact .SOCIAL p {
+#footer .box-grid .contact .SOCIAL p {
   text-align: start;
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
+  font-size: 1.1rem;
+}
+#footer .box-grid .contact .SOCIAL p i {
+  margin-left: 40px;
+  padding: 15px;
+  border: solid rgb(112, 111, 111) 1px;
+  border-radius: 50px;
 }/*# sourceMappingURL=index.css.map */

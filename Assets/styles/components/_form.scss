@@ -1,86 +1,48 @@
 #footer{
-    margin-top: 40px;
-    margin-bottom: 40px;
+     background: $white;
+    width: 73%;
+    margin: 40px auto;
+
+    form{
+        display: grid;
+        grid-template-rows: 100px 100px 300px 50px;
+        margin-top: 80px;
+        gap: 23px;
+        label{
+            margin-left: 70px;
+            font-size: 0.9rem;
+            font-family: Inter;
+            color: $grey;
+            text-transform: uppercase;
+        }
+        input{
+            height: 54px;
+            width: 80%;
+            margin: 20px auto;
+            
+         }
+         button{
+            margin-left: 70px;
+            margin-bottom: 80px;
+            color: $grey;
+            border-color: $grey;
+         }
+    #msg{
+        height: 245px;
+        width: 80%;
+        margin: 20px auto;
+    }
 }
+
 
 .box-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative;
 
-    form {
-        display: grid;
-        grid-template-rows: 1fr 1fr 2fr 1fr;
-
-        label#namel {
-            font-family: Inter;
-            text-transform: uppercase;
-            margin-top: 72px;
-            margin-left: 70px;
-            font-size: 0.9rem;
-            text-align: start;
-            color: $grey;
-        }
-        label#maill {
-            font-family: Inter;
-            text-transform: uppercase;
-            margin-top: -20px;
-            margin-left: 70px;
-            font-size: 0.9rem;
-            text-align: start;
-            color: $grey;
-        }
-        label#msgl {
-            font-family: Inter;
-            text-transform: uppercase;
-            margin-top: 10px;
-            margin-left: 70px;
-            font-size: 0.9rem;
-            text-align: start;
-            color: $grey;
-        }
-
-        input#namet {
-            border: solid $grey2 1px;
-            border-radius: 5px;
-            height: 54px;
-            width: 80%;
-            margin: -10px auto 0;
-            font-size: 2rem;
-            
-
-        }
-        input#mail {
-            border: solid $grey2 1px;
-            border-radius: 5px;
-            height: 54px;
-            width: 80%;
-            margin: 4px auto 0;
-            font-size: 2rem;
-        }
-        input#msg{
-            border: solid $grey2 1px;
-            border-radius: 5px;
-            height: 250px;
-            width: 80%;
-            margin: 5px auto 0;
-            font-size: 2rem;
-        }
-        button{
-            width: 37%;
-            margin: 50px auto;
-            padding: 10px 30px;
-            height: 35%;
-            color: $grey;
-            border: $grey solid 1px;
-
-    
-        }
- 
-    }
     .contact{
         display: grid;
         grid-template-rows: auto;
+        display: block;
 
         .adress{
             display: flex;
@@ -156,9 +118,17 @@
                 font-family: merriweather;
                margin: auto 95px;
                line-height: 30px;   
+               font-size: 1.1rem;
+               i{
+                margin-left: 40px;
+                padding: 15px;
+                border: solid $grey 1px;
+                border-radius: 50px;
+               }
             }
         }
         
     }
 
+}
 }
