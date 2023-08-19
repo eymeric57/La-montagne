@@ -85,12 +85,15 @@ nav ul {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 650px) {
+nav ul li {
+  margin-top: 30px;
+}
+@media screen and (max-width: 1150px) {
   nav ul {
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 34% 33% 33%;
   }
 }
-nav ul a#left {
+nav a#left {
   font-family: Inter;
   color: rgb(250, 248, 248);
   list-style: none;
@@ -98,41 +101,42 @@ nav ul a#left {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  height: 100%;
 }
-@media screen and (max-width: 650px) {
-  nav ul a#left {
-    line-height: normal;
-  }
-}
-nav ul a#left:hover {
+nav a#left:hover {
   background: rgb(235, 231, 231);
   color: rgb(15, 15, 15);
 }
-nav ul a#left:first-child {
+nav a#left:first-child {
   color: black;
   background: rgb(235, 231, 231);
 }
 @media screen and (max-width: 650px) {
-  nav ul li {
+  nav li {
     font-size: 0.7rem;
     text-align: center;
   }
-  nav ul p {
+  nav p {
     display: none;
   }
 }
-nav ul p {
+@media screen and (max-width: 1150px) {
+  nav p {
+    display: none;
+  }
+}
+nav p {
   margin: auto 50px;
   color: rgb(250, 248, 248);
   text-align: end;
 }
-nav ul p i {
+nav p i {
   margin: 0;
   border: none;
   -webkit-transition: 1s;
   transition: 1s;
 }
-nav ul p i:hover {
+nav p i:hover {
   scale: 1.4;
   cursor: pointer;
 }
@@ -163,7 +167,13 @@ nav ul p i:hover {
   content: "";
   border: solid rgba(146, 144, 144, 0.301) 1px;
   width: 33%;
-  margin: 5px auto;
+  margin: 5px 50px;
+}
+@media screen and (max-width: 1150px) {
+  #box .main-chapter h2:before, #main .main-chapter h2:before {
+    width: 20%;
+    margin: 5px 10px;
+  }
 }
 @media screen and (max-width: 650px) {
   #box .main-chapter h2:before, #main .main-chapter h2:before {
@@ -176,7 +186,13 @@ nav ul p i:hover {
   content: "";
   border: solid rgba(146, 144, 144, 0.301) 1px;
   width: 33%;
-  margin: 5px auto;
+  margin: 5px 50px;
+}
+@media screen and (max-width: 1150px) {
+  #box .main-chapter h2:before, #main .main-chapter h2:before {
+    width: 20%;
+    margin: 5px 10px;
+  }
 }
 @media screen and (max-width: 650px) {
   #box .main-chapter h2:after, #main .main-chapter h2:after {
@@ -309,10 +325,19 @@ button {
   font-size: 0.95rem;
   letter-spacing: 2px;
   margin-top: 40px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 #main button {
   margin-bottom: 110px;
+}
+
+button:hover {
+  background: rgb(202, 202, 202);
+  cursor: pointer;
+  scale: 1.1;
+  color: rgb(250, 248, 248);
 }
 
 #footer {
@@ -340,24 +365,42 @@ button {
 }
 @media screen and (max-width: 650px) {
   #footer form label {
-    margin-top: 20px;
+    margin: 20px 30px;
   }
 }
 #footer form input {
   height: 54px;
   width: 80%;
   margin: 20px auto;
+  font-size: 1.2rem;
 }
 #footer form button {
   margin-left: 70px;
   margin-bottom: 80px;
   color: rgb(112, 111, 111);
   border-color: rgb(112, 111, 111);
+  background: rgb(250, 248, 248);
+}
+@media screen and (max-width: 650px) {
+  #footer form button {
+    margin-left: 30px;
+  }
+}
+#footer form button:hover {
+  color: white;
+  background: rgb(112, 111, 111);
+  border: black;
 }
 #footer form #msg {
   height: 245px;
   width: 80%;
-  margin: 20px auto;
+  margin: 20px 65px;
+  resize: none;
+}
+@media screen and (max-width: 650px) {
+  #footer form #msg {
+    margin-left: 30px;
+  }
 }
 #footer .box-grid {
   display: grid;
@@ -529,10 +572,17 @@ button {
   padding: 15px;
   border: solid rgb(112, 111, 111) 1px;
   border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 @media screen and (max-width: 650px) {
   #footer .box-grid .contact .SOCIAL p i {
     padding: 7px;
     margin: auto;
   }
+}
+#footer .box-grid .contact .SOCIAL p i:hover {
+  cursor: pointer;
+  scale: 1.2;
+  border-radius: 10px;
 }/*# sourceMappingURL=index.css.map */

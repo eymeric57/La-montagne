@@ -6,9 +6,18 @@ button {
     font-size: 0.95rem;
     letter-spacing: 2px;
     margin-top: 40px;
+    transition: 0.8s;
 }
 
 
 #main button {
     margin-bottom: 110px;
 }
+
+button:hover{
+    background: $grey2;
+    cursor: pointer;
+    scale: 1.1;
+    color: $white;
+}
+

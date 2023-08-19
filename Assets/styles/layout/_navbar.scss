@@ -18,32 +18,42 @@ nav{
         text-transform: uppercase;
         letter-spacing: 2px;
 
-        @media screen  and (max-width:650px){
+
+        li{
+
+          margin-top: 30px;
+        }
+     
+        @media screen  and (max-width:1150px){
         
-            grid-template-columns: 33% 33% 33%;
-            
-        
-    }
+            grid-template-columns: 34% 33% 33%;
+             }
+
+             }
         a#left {
             font-family: Inter;
             color: $white;
             list-style: none;    
             font-size: 0.9rem;
-           
             transition:0.5s;
             cursor: pointer;
+            height: 100%;
+            
+
             @media screen  and (max-width:650px){
-              line-height: normal;}
+              }
               
         
               &:hover {
                 background: $white1;
                 color: $black;
+               
                 
               }
               &:first-child{
                 color: black;
                 background: $white1;
+                
               }
               
         }
@@ -58,6 +68,10 @@ nav{
                 display: none;
             }
             
+        }
+
+        @media screen  and (max-width:1150px){
+          p{display: none;}
         }
         p{
             margin: auto 50px;
@@ -77,4 +91,3 @@ nav{
         }
       
     }
-}
