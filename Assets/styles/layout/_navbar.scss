@@ -30,7 +30,8 @@ nav{
              }
 
              }
-        a#left {
+        a#left1,a#left {
+        
             font-family: Inter;
             color: $white;
             list-style: none;    
@@ -38,25 +39,28 @@ nav{
             transition:0.5s;
             cursor: pointer;
             height: 100%;
-            
 
-            @media screen  and (max-width:650px){
-              }
-              
-        
+           
+
+            &:first-child {
+              color: black;
+              background: $white1;
+
+            }
+            
+    
               &:hover {
                 background: $white1;
                 color: $black;
-               
-                
-              }
-              &:first-child{
-                color: black;
-                background: $white1;
-                
-              }
+              }    
               
         }
+
+         ul:hover #left1:not(:hover){
+          background: none;
+          color: $white;
+         
+         }
 
     
         @media screen  and (max-width:650px){

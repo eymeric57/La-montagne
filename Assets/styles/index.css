@@ -59,11 +59,11 @@ header p i {
   border: solid rgb(250, 248, 248) 2px;
   border-radius: 100px;
   padding: 17px 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 header p i:hover {
   scale: 1.5;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 nav {
@@ -93,7 +93,7 @@ nav ul li {
     grid-template-columns: 34% 33% 33%;
   }
 }
-nav a#left {
+nav a#left1, nav a#left {
   font-family: Inter;
   color: rgb(250, 248, 248);
   list-style: none;
@@ -103,13 +103,17 @@ nav a#left {
   cursor: pointer;
   height: 100%;
 }
-nav a#left:hover {
+nav a#left1:first-child, nav a#left:first-child {
+  color: black;
+  background: rgb(235, 231, 231);
+}
+nav a#left1:hover, nav a#left:hover {
   background: rgb(235, 231, 231);
   color: rgb(15, 15, 15);
 }
-nav a#left:first-child {
-  color: black;
-  background: rgb(235, 231, 231);
+nav ul:hover #left1:not(:hover) {
+  background: none;
+  color: rgb(250, 248, 248);
 }
 @media screen and (max-width: 650px) {
   nav li {
