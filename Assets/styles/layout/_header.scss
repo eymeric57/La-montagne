@@ -35,9 +35,18 @@ header {
            
             
             &:hover{
-                scale: 1.5;
+                animation: label1 infinite 1s  ease-in-out;
                 
             }
+
+           @keyframes label1{
+            50%{
+                scale: 1.5;
+            }
+            100%{
+                scale: 1;
+            }
+           }
         }
     }
 

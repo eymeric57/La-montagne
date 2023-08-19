@@ -16,7 +16,7 @@ body {
   background: url(/Assets/img/bg.jpg) fixed center/cover;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: white;
 }
@@ -63,7 +63,24 @@ header p i {
   transition: 1s;
 }
 header p i:hover {
-  scale: 1.5;
+  -webkit-animation: label1 infinite 1s ease-in-out;
+          animation: label1 infinite 1s ease-in-out;
+}
+@-webkit-keyframes label1 {
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes label1 {
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 nav {
@@ -245,6 +262,8 @@ nav p i:hover {
   border-left: none;
   padding: 80px 0;
   width: 100%;
+  z-index: 5;
+  position: relative;
 }
 @media screen and (max-width: 650px) {
   #box .second-chapter .first-travel, #main .second-chapter .first-travel {
@@ -376,7 +395,7 @@ button:hover {
   height: 54px;
   width: 80%;
   margin: 20px auto;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 #footer form button {
   margin-left: 70px;
@@ -400,6 +419,7 @@ button:hover {
   width: 80%;
   margin: 20px 65px;
   resize: none;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 650px) {
   #footer form #msg {
@@ -578,6 +598,7 @@ button:hover {
   border-radius: 50px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: rgb(15, 15, 15);
 }
 @media screen and (max-width: 650px) {
   #footer .box-grid .contact .SOCIAL p i {

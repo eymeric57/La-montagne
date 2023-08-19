@@ -131,6 +131,8 @@
             border-left: none;
             padding: 80px 0;
             width: 100%;
+            z-index: 5;
+            position: relative;
             
             @media  screen and (max-width:650px){
                 border-bottom: none; 
@@ -166,6 +168,7 @@
             line-height: 37px;
             font-size: 1rem;
             }
+
         }
         .second-travel {
             border: solid rgba(136, 134, 134, 0.61) 1px;

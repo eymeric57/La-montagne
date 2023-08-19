@@ -30,7 +30,7 @@
             height: 54px;
             width: 80%;
             margin: 20px auto;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
 
         }
 
@@ -40,6 +40,7 @@
             color: $grey;
             border-color: $grey;
             background: $white;
+
             @media screen and (max-width:650px) {
                 margin-left: 30px;
             }
@@ -56,6 +57,8 @@
             width: 80%;
             margin: 20px 65px;
             resize: none;
+            font-size: 1.2rem;
+
             @media screen and (max-width:650px) {
                 margin-left: 30px;
             }
@@ -222,6 +225,7 @@
                         border: solid $grey 1px;
                         border-radius: 50px;
                         transition: 0.5s;
+                        color: $black;
 
                         @media screen and (max-width:650px) {
                             padding: 7px;
