@@ -15,6 +15,29 @@ html {
 body {
   background: url(/Assets/img/bg.jpg) fixed center/cover;
 }
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(15, 15, 15);
+  -webkit-animation: animBefor 1.5s ease forwards;
+          animation: animBefor 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes animBefor {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animBefor {
+  to {
+    opacity: 0;
+  }
+}
 
 nav a {
   text-decoration: none;
