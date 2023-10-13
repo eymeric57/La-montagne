@@ -23,8 +23,8 @@ body::before {
   top: 0;
   left: 0;
   background: rgb(15, 15, 15);
-  -webkit-animation: animBefor 0.8s ease forwards;
-          animation: animBefor 0.8s ease forwards;
+  -webkit-animation: animBefor 1.5s ease forwards;
+          animation: animBefor 1.5s ease forwards;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
 }
@@ -36,8 +36,6 @@ body::before {
 @keyframes animBefor {
   to {
     opacity: 0;
-    display: none;
-    
   }
 }
 
@@ -158,7 +156,7 @@ nav ul:hover #left1:not(:hover) {
   background: none;
   color: rgb(250, 248, 248);
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   nav li {
     font-size: 0.7rem;
     text-align: center;
@@ -202,7 +200,7 @@ nav p i:hover {
   font-size: 1.3rem;
   width: 100%;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .main-chapter h2, #main .main-chapter h2 {
     font-size: 1rem;
     width: 100%;
@@ -222,7 +220,7 @@ nav p i:hover {
     margin: 5px 10px;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .main-chapter h2:before, #main .main-chapter h2:before {
     width: 15%;
     margin: 5px 10px;
@@ -241,7 +239,7 @@ nav p i:hover {
     margin: 5px 10px;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .main-chapter h2:after, #main .main-chapter h2:after {
     width: 15%;
     margin: 5px 10px;
@@ -255,7 +253,7 @@ nav p i:hover {
   width: 45%;
   color: rgb(15, 15, 15);
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .main-chapter h3, #main .main-chapter h3 {
     font-size: 1.5rem;
     width: 40%;
@@ -278,7 +276,7 @@ nav p i:hover {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .second-chapter, #main .second-chapter {
     display: block;
   }
@@ -291,7 +289,7 @@ nav p i:hover {
   z-index: 5;
   position: relative;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .second-chapter .first-travel, #main .second-chapter .first-travel {
     border-bottom: none;
   }
@@ -328,7 +326,7 @@ nav p i:hover {
   padding: 80px 0;
   width: 100%;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .second-chapter .second-travel, #main .second-chapter .second-travel {
     border-top: none;
   }
@@ -348,7 +346,7 @@ nav p i:hover {
   letter-spacing: 2px;
   line-height: 35px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #box .second-chapter .second-travel h3, #main .second-chapter .second-travel h3 {
     font-size: 1.4rem;
     width: 60%;
@@ -400,7 +398,7 @@ button:hover {
   margin-top: 80px;
   gap: 23px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer form {
     display: block;
   }
@@ -430,9 +428,9 @@ button:hover {
   border-color: rgb(112, 111, 111);
   background: rgb(250, 248, 248);
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer form button {
-    margin-left: 30px;
+    margin: 0px 10px 80px 10px;
   }
 }
 #footer form button:hover {
@@ -447,7 +445,7 @@ button:hover {
   resize: none;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer form #msg {
     margin-left: 30px;
   }
@@ -456,7 +454,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid {
     display: block;
     padding: 10px;
@@ -478,7 +476,7 @@ button:hover {
   border-bottom: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .adress {
     border: solid rgb(202, 202, 202) 1px;
   }
@@ -488,10 +486,9 @@ button:hover {
   font-size: 0.9rem;
   font-family: Inter;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .adress h1 {
-    margin: 90px 0 auto 20px;
-
+    margin: auto;
   }
 }
 #footer .box-grid .contact .adress p {
@@ -499,13 +496,10 @@ button:hover {
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
-  padding: 20px 10px;
- 
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .adress p {
     margin: auto;
-    font-size: 0.8rem;
   }
 }
 #footer .box-grid .contact .PHONE {
@@ -519,7 +513,7 @@ button:hover {
   border-bottom: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .PHONE {
     border: solid rgb(202, 202, 202) 1px;
   }
@@ -529,9 +523,9 @@ button:hover {
   font-size: 0.9rem;
   font-family: Inter;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .PHONE h1 {
-    margin: 90px 0 auto 20px;
+    margin: auto;
   }
 }
 #footer .box-grid .contact .PHONE p {
@@ -540,7 +534,7 @@ button:hover {
   margin: auto 95px;
   line-height: 30px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .PHONE p {
     margin: auto;
   }
@@ -555,7 +549,7 @@ button:hover {
   border-left: solid rgb(202, 202, 202) 1px;
   height: 200px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .EMAIL {
     border: solid rgb(202, 202, 202) 1px;
   }
@@ -565,9 +559,9 @@ button:hover {
   font-size: 0.9rem;
   font-family: Inter;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .EMAIL h1 {
-    margin: 90px 0 auto 20px;
+    margin: auto;
   }
 }
 #footer .box-grid .contact .EMAIL p {
@@ -576,10 +570,9 @@ button:hover {
   margin: auto 95px;
   line-height: 30px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .EMAIL p {
     margin: auto;
-    font-size: 1rem;
   }
 }
 #footer .box-grid .contact .SOCIAL {
@@ -597,9 +590,9 @@ button:hover {
   font-size: 0.9rem;
   font-family: Inter;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .SOCIAL h1 {
-    margin: 90px 0 auto 20px;
+    margin: auto;
   }
 }
 #footer .box-grid .contact .SOCIAL p {
@@ -609,7 +602,7 @@ button:hover {
   line-height: 30px;
   font-size: 1.1rem;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .SOCIAL p {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -631,7 +624,7 @@ button:hover {
   transition: 0.5s;
   color: rgb(15, 15, 15);
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 650px) {
   #footer .box-grid .contact .SOCIAL p i {
     padding: 7px;
     margin: auto;

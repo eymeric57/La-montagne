@@ -40,9 +40,12 @@
             color: $grey;
             border-color: $grey;
             background: $white;
+           
 
             @media screen and (max-width:650px) {
-                margin-left: 30px;
+                margin: 0px 10px 80px 10px;
+                
+            
             }
 
             &:hover {
