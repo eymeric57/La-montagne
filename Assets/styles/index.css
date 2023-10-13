@@ -490,7 +490,8 @@ button:hover {
 }
 @media screen and (max-width: 1050px) {
   #footer .box-grid .contact .adress h1 {
-    margin: auto;
+    margin: 90px 0 auto 20px;
+
   }
 }
 #footer .box-grid .contact .adress p {
@@ -498,10 +499,13 @@ button:hover {
   font-family: merriweather;
   margin: auto 95px;
   line-height: 30px;
+  padding: 20px 10px;
+ 
 }
 @media screen and (max-width: 1050px) {
   #footer .box-grid .contact .adress p {
     margin: auto;
+    font-size: 0.8rem;
   }
 }
 #footer .box-grid .contact .PHONE {
@@ -527,7 +531,7 @@ button:hover {
 }
 @media screen and (max-width: 1050px) {
   #footer .box-grid .contact .PHONE h1 {
-    margin: auto;
+    margin: 90px 0 auto 20px;
   }
 }
 #footer .box-grid .contact .PHONE p {
@@ -563,7 +567,7 @@ button:hover {
 }
 @media screen and (max-width: 1050px) {
   #footer .box-grid .contact .EMAIL h1 {
-    margin: auto;
+    margin: 90px 0 auto 20px;
   }
 }
 #footer .box-grid .contact .EMAIL p {
@@ -575,6 +579,7 @@ button:hover {
 @media screen and (max-width: 1050px) {
   #footer .box-grid .contact .EMAIL p {
     margin: auto;
+    font-size: 1rem;
   }
 }
 #footer .box-grid .contact .SOCIAL {
@@ -594,7 +599,7 @@ button:hover {
 }
 @media screen and (max-width: 1050px) {
   #footer .box-grid .contact .SOCIAL h1 {
-    margin: auto;
+    margin: 90px 0 auto 20px;
   }
 }
 #footer .box-grid .contact .SOCIAL p {
