@@ -42,8 +42,8 @@
             background: $white;
            
 
-            @media screen and (max-width:650px) {
-                margin: 0px 10px 80px 10px;
+            @media screen and (max-width:1000px) {
+                margin: 0px 10px 200px 200px;
                 
             
             }
@@ -73,7 +73,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        @media screen and (max-width:650px) {
+        @media screen and (max-width:1000px) {
             display: block;
             padding: 10px;
         }
@@ -90,8 +90,9 @@
                 border-bottom: solid $grey2 1px;
                 height: 200px;
 
-                @media screen and (max-width:650px) {
+                @media screen and (max-width:1000px) {
                     border: solid $grey2 1px;
+                    margin-top: 50px;
                 }
 
                 h1 {
@@ -189,7 +190,7 @@
 
             .SOCIAL {
                 display: flex;
-                justify-content: start;
+                justify-content: space-between;
                 border: solid $grey2 1px;
                 height: 200px;
 
@@ -213,12 +214,23 @@
                     line-height: 30px;
                     font-size: 1.1rem;
 
-                    @media screen and (max-width:650px) {
+                    @media screen and (max-width:1000px) {
                         align-items: center;
                         display: flex;
-                        width: 50%;
-                        margin: auto;
+                        width: 80%;
+                        margin:auto;
                         font-size: 1rem;
+                        margin-left: 100px;
+                        margin-right: 100px;
+
+                          
+                        @media screen and (max-width:1000px) {
+                            padding: 7px;
+                            margin: auto;
+                          
+
+                        }
+
 
                     }
 
@@ -229,6 +241,8 @@
                         border-radius: 50px;
                         transition: 0.5s;
                         color: $black;
+                        
+
 
                         @media screen and (max-width:650px) {
                             padding: 7px;
