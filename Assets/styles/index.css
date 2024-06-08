@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: url(/Assets/img/bg.jpg) fixed center/cover;
+  background: url(..//img/bg.jpg) fixed center/cover;
 }
 body::before {
   content: "";

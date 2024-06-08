@@ -18,7 +18,7 @@ html{
     padding: 0;
 }
 body{
-    background: url(/Assets/img/bg.jpg) fixed center/cover;
+    background: url(..//img/bg.jpg) fixed center/cover;
     
     &::before{
         content: "";
