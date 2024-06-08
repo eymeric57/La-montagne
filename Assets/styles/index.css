@@ -621,6 +621,7 @@ button:hover {
 }
 @media screen and (max-width: 1000px) and (max-width: 1000px) {
   #footer .box-grid .contact .SOCIAL p {
+    border: solid rgb(202, 202, 202) 1px;
     padding: 7px;
     margin: auto;
   }
@@ -636,6 +637,7 @@ button:hover {
 }
 @media screen and (max-width: 650px) {
   #footer .box-grid .contact .SOCIAL p i {
+    border: solid rgb(202, 202, 202) 1px;
     padding: 7px;
     margin: auto;
   }
